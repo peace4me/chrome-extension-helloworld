@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>popup页</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<script src="js/xlsx.full.min.js"></script>
+	<script src="js/import_file.js"></script>
+	<style>
+	body {
+		font-family: 'Microsoft Yahei';
+		width: 500px;
+		min-height: 100px;
+	}
+	a {margin-right: 10px;}
+	</style>
+</head>
+<body>
+	<h1>账号密码自动填充工具</h1>
+	<h2>1.先在这里上传账号密码。账号必须在首页登陆。</h2>
+	<h2>2.账号登陆后，一定要确保知识竞赛完成再退出，因为登陆就默认是完成。</h2>
+	<h2>3.步骤：在首页依次点击登录、账号框、密码框、确定。自动填充的账号就是还没有答题的账号。</h2>
+	<div>
+		<h2> 先下载模板（成绩一列不填）：</h2>
+		<button  id="DL_btn">下载模板</button>
+		<a href="" download="账号密码模板.xlsx" id="hf"></a><br>
+		<p> 请选择要导入的模版文件：</p>
+		<input id="file" type="file" >
+		
+		<!--<div id="demo"></div>-->
+		<p>  </p>
+	</div>
+</body>
+</html>
